@@ -119,7 +119,7 @@ The "CallType" has the information suggesting from reference seq (refcall) or vc
 
 The "Sample" may have the information of the sample name inherited from vcf.
 
-the file can be opened in Microsoft Excel or other spreadsheet for easy read.
+the file can be opened in Microsoft Excel or other spreadsheet for easy read. For all 20 CODIS sites, please download the out.tsv in the directory "testData_output" in this Github site.
 
 ### results 2. colorful alleles .html
 
