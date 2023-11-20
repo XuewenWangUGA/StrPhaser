@@ -14,7 +14,7 @@ The software can be downloaded for a direct use. No additional compiling and ins
 
 `git clone https://github.com/XuewenWangUGA/StrPhaser`
 
-or download the zip compressed files and then unzip to VarSeqStitcher
+or download the zip compressed files and then unzip to StrPhaser
 
 ## Update Java run environment if necessary
 The sfotware will use the Java runtime environment (SE) V17. If your computer has an old version of Java runtime, please install the newest Java or Java SE Development Kit 17 or higher from https://www.oracle.com/java/technologies/downloads/. Either Java or Java SE should work.
@@ -28,22 +28,16 @@ The tool is under the Lesser General Public License v2.1. Free to distribute and
 ## Usage:
 Open a terminal window and type the following command: the -Xmx4G is for the allowed maximum memory to use, and can be ignored or changed to any memory you needed, e.g., 2G: -Xmx2G
 
-`java -jar -Xmx4G VarSeqStitcher.jar [options]  >out.tsv`
+`java -jar StrPhaser.jar [options]  >out.tsv`
+
+
+or if want to control the maxi allowed computing memory, add -Xmx option:e.g. -Xmx4G for allowing maxi 4 G memory to use for this APP.
+
+`java -jar -Xmx4G StrPhaser.jar [options]  >out.tsv`
 
 Options:  
-    
-     -d,--inDelBedFile <arg>      configure file of InDels in BED format in tabular plain text, e.g.: 
-                                  Chrom	ChromStart	ChromEnd	REF	ALT	ID
-                                  chr1	230764747	230764748	GA	G	D1S1656
-                                  chr1	230764749	230764750	T	TC	D1S1656
-                                 chr2	1485704	1485705	C	CT	TPOX
-                              
-     -n,--snpPanelPosFile <arg>   configure file of SNPs in tabular plain text, e.g.  
-                                   #CHROM	 POS 	ID	REF	ALT
-                                    chr1	230765010	D1S1656	A	G
-                                    chr1	230765280	D1S1656	G	A
- 
-     -r,--referenceSeq <arg>      reference genome sequence file in fasta format, accompanied by an indexed .fai from samtools faidx: eg. hg38.fasta, hg38.fa.fai <br/>
+      
+      -r,--referenceSeq <arg>      reference genome sequence file in fasta format, accompanied by an indexed .fai from samtools faidx: eg. hg38.fasta, hg38.fa.fai <br/>
      -s,--strRegion <arg>         STR regions in tabular plain text, 1-based coordinate, one locus per line.  
                                   eg.  Chrom ChromStartPos_Str ChromEndPos_Str Name
                                        chr1 1000 10100 mkName1
