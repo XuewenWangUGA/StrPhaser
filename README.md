@@ -10,11 +10,13 @@ Mac OS 11.6.5
 Linux: Ubuntu 20.04, 22.04; Center OS 8
 
 ## Installation 
-The software can be downloaded for a direct use. No additional compiling and installation.  Get it from Github: 
+The software can be downloaded for a direct use. No additional compiling and installation.  Get it from Github by type the following command in a terminal window: 
 
 `git clone https://github.com/XuewenWangUGA/StrPhaser`
 
 or download the zip compressed files and then unzip to StrPhaser
+
+remove the version number: change the file name of StrPhaserv###.jar , e.g., StrPhaserv1.0.jar to StrPhaser.jar
 
 ## Update Java run environment if necessary
 The sfotware will use the Java runtime environment (SE) V17. If your computer has an old version of Java runtime, please install the newest Java or Java SE Development Kit 17 or higher from https://www.oracle.com/java/technologies/downloads/. Either Java or Java SE should work.
@@ -51,7 +53,7 @@ Options:
 Here is an example of how to use this tool for a human for 8-kb regions of 20 CODIS core STR sites.  For your specific genome, you just need to replace the genome and targeted sites in configure files with yours.
 Firstly go to the software directory in the command window:
 
-` cd VarSeqStitcher`
+` cd StrPhaser`
        
 ### Step 1. prepare a genome reference file which should be the one used for vcf generation previously 
 Download the genome sequence of human from the 1000 Genome Project to the folder "StrPhaser" 
@@ -66,13 +68,18 @@ Then to index the genome sequence with samtools (tool link: https://www.htslib.o
        
        
 ### Step 2. get test data and targeted site files 
-Download the subdirectory `testData` and put it inside the folder "StrPhaser"
+Download the subdirectory `testData` from this page and put it inside the folder "StrPhaser".
 
 
 ### Step 3. run the analysis with the following command
-We use the vcf files for human sample HG00130 as the test data. The original files are downloaded from the 1KG project at https://www.internationalgenome.org/data-portal/data-collection/30x-grch38. VCF for all chromosomes are merged and sorted, indexed with bcftools.
-       
+We use the vcf files for human sample HG00130 as the test data. The original files are downloaded from the 1KG project at https://www.internationalgenome.org/data-portal/data-collection/30x-grch38. VCF for all chromosomes are merged and sorted, indexed with bcftools. To use the following command to run :
+
+For Windows system:
+
 `java -jar StrPhaser.jar -r GRCh38_full_analysis_set_plus_decoy_hla.fa -s testData\CODISSTR_anchor.XW.config_v0.3.txt -v testData\CCDG_14151_B01_GRM_WGS_2020-08-05_AllChr.filtered.shapeit2-duohmm-phased.8000.HG00130.vcf.gz -t 2 >out.tsv`
+
+For Linux-like systems:
+`java -jar StrPhaser.jar -r GRCh38_full_analysis_set_plus_decoy_hla.fa -s testData/CODISSTR_anchor.XW.config_v0.3.txt -v testData/CCDG_14151_B01_GRM_WGS_2020-08-05_AllChr.filtered.shapeit2-duohmm-phased.8000.HG00130.vcf.gz -t 2 >out.tsv`
 
 
 Here the output will be saved to "out.tsv", which is a tab seperated plain text. You can give any file name as like. If no output file name is given, the output will be directed into standout/screen of the terminal window.
