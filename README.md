@@ -90,33 +90,45 @@ Here the output will be saved to "out.tsv", which is a tab seperated plain text.
 
 The output will look like:
 
-    #Total SNP loci in the position file:	965 	Columns:	5
-    #Total InDel loci:	52
-    #Total loci in STR configure file:	20
-    #Marker	AlleleID	Length(bp)	Allele(stitched_and_phased)	CallType	Sample
-    #CSF1PO        #150076810,150077208,150077209,150077248,150077432,150077930,150078115,150078547,150078565,150078667,150078700,150078856,150079140,150079167,150079266,150079332,150079368,150079539,150079547,150079796,150079818,150079998,150080011,150080550,150080613,150080780,150080990,150081238,150081390,150081538,150081664,150082349,150082446,150082478,150082618,150083032,150083033,150083645,150083666,150084099,150084113,150084310,150084394,150084398;150079596,150079750,150079977;150076324		
-    CSF1PO	a1:	87	C,A,A,G,C,A,A,T,C,C,A,C,G,C,A,T,C,C,T,T,C,G,C,T,G,G,G,C,T,G,C,C,G,G,G,G,T,T,C,G,G,G,G,G;T,T,G;ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT	vcfcall	HG00130
-    CSF1PO	a2:	91	C,A,A,G,C,A,A,T,C,C,A,C,G,C,A,T,C,C,T,T,C,G,C,T,G,G,G,C,T,G,C,C,G,G,G,G,C,T,T,C,G,A,G,G;T,T,G;ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT	vcfcall	HG00130
+   #input pars: -r GRCh38_full_analysis_set_plus_decoy_hla.fa -s testData/CODISSTR_anchor.XW.config_v0.3.txt -v testData/CCDG_14151_B01_GRM_WGS_2020-08-05_AllChr.filtered.shapeit2-duohmm-phased.8000.HG00130.vcf.gz -t 2 
+#pars: -r GRCh38_full_analysis_set_plus_decoy_hla.fa -s testData/CODISSTR_anchor.XW.config_v0.3.txt -v testData/CCDG_14151_B01_GRM_WGS_2020-08-05_AllChr.filtered.shapeit2-duohmm-phased.8000.HG00130.vcf.gz -t 2
+#	time: 2023-11-20 11:06:08.040935446
+#Total loci in STR configure file:	20
 
-for each marker /locus name, there will be three lines for a diploid genome in output: 
+#Marker	AlleleID	Length(bp)	Allele(stitched_and_phased)	CallType	Sample
+CSF1PO	a1:	40	ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT	vcfcall
+CSF1PO	a2:	44	ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT	vcfcall
+D10S1248	a1:	52	GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA	vcfcall
+D10S1248	a2:	64	GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA	vcfcall
+D12S391	a1:	76	AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGAT	vcfcall
+D12S391	a2:	76	AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGAT	vcfcall
 
-line 1: coordinates of each targeted site, e.g. the first two position of CSF1PO will be 150076810,150077208
+The # section is the comments.
 
-line 2: DNA sequence of allele 1 at each targeted site (a1): e.g., CSF1PO	a1:	87	C,A
+In the output file, there will have many columns. for a diploid genome, there will be at least one allele. For polyploidy genome, there may have have more then one allele for each marker/locus. 
 
-line 3: DNA sequence of allele 2 at each targted site(a2): e.g.,CSF1PO	a2:	91	C,A
+The "Marker" column contains the same name a locus or marker as given in configure file.
 
-The sequence line consists of three sections: SNPs, InDels, and then STR.
+The "AlleleID" column is the name of phased alleles. a0 for a reference call, a1, and a2 for alternatice alleles different from reference genome sequence.
+
+The "Length(bp)" column is the bp of bases.
+
+The "Allele(stitched_and_phased)" is the allelic sequences of a STR.
+
+The "CallType" has the information suggesting from reference seq (refcall) or vcf (vcfcall).
+
+The "Sample" may have the information of the sample name inherited from vcf.
 
 the file can be opened in Microsoft Excel or other spreadsheet for easy read.
 
 ### results 2. colorful alleles .html
 
-Another result called output .html will be also generated for a colorful display of the alleles. This file will be opened in an internet web browser by default if available.
+Another result called output .html will be also generated for a colorful display of the alleles if supported by your system. It should be supported in most system but not all like outdated Centos with command support only. This file will be opened in an internet web browser by default if available.
 
-![ColorAlleleImage](VarSeqStitcher_test.PNG) Fig.1 Colorful alleles output  
+![ColorAlleleImage](D8_colorAllele.PNG) Fig.1 Colorful alleles of locus D8 output 
 
-More colorful alleles: download the testOutput/dna_STRcolor.html, then open in your web browser. 
+![ColorAlleleImage](D19_colorAllele.PNG) Fig.1 Colorful alleles of locus D19 output 
+
 
 
 ## Citation
