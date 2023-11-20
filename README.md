@@ -1,5 +1,19 @@
 # StrPhaser
 A novel bioinformatics software to build STR alleles and phase them using VCF and reference sequence.
+* __Building long STR alleles from VCF__
+
+* __achieve same effects as from long sequencing reads__
+
+*  __call all variants inside a STR alleles at the same time__
+
+* __run faster with parallel computing__
+  
+* __also works for short reads__
+
+* __Designed by Ph.D Xuewen Wang for those love genomics and science__
+
+
+## Computing enviroments 
 
 Works for any computing system where the Java Run environment is available. The tested systems include:
 
