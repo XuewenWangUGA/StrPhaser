@@ -91,18 +91,18 @@ Here the output will be saved to "out.tsv", which is a tab seperated plain text.
 
 The output will look like:
 
-   #input pars: -r GRCh38_full_analysis_set_plus_decoy_hla.fa -s testData/CODISSTR_anchor.XW.config_v0.3.txt -v testData/CCDG_14151_B01_GRM_WGS_2020-08-05_AllChr.filtered.shapeit2-duohmm-phased.8000.HG00130.vcf.gz -t 2 
-#pars: -r GRCh38_full_analysis_set_plus_decoy_hla.fa -s testData/CODISSTR_anchor.XW.config_v0.3.txt -v testData/CCDG_14151_B01_GRM_WGS_2020-08-05_AllChr.filtered.shapeit2-duohmm-phased.8000.HG00130.vcf.gz -t 2
-#	time: 2023-11-20 11:06:08.040935446
-#Total loci in STR configure file:	20
-
-#Marker	AlleleID	Length(bp)	Allele(stitched_and_phased)	CallType	Sample
-CSF1PO	a1:	40	ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT	vcfcall
-CSF1PO	a2:	44	ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT	vcfcall
-D10S1248	a1:	52	GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA	vcfcall
-D10S1248	a2:	64	GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA	vcfcall
-D12S391	a1:	76	AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGAT	vcfcall
-D12S391	a2:	76	AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGAT	vcfcall
+    #input pars: -r GRCh38_full_analysis_set_plus_decoy_hla.fa -s testData/CODISSTR_anchor.XW.config_v0.3.txt -v testData/CCDG_14151_B01_GRM_WGS_2020-08-05_AllChr.filtered.shapeit2-duohmm-phased.8000.HG00130.vcf.gz -t 2 
+    #pars: -r GRCh38_full_analysis_set_plus_decoy_hla.fa -s testData/CODISSTR_anchor.XW.config_v0.3.txt -v testData/CCDG_14151_B01_GRM_WGS_2020-08-05_AllChr.filtered.shapeit2-duohmm-phased.8000.HG00130.vcf.gz -t 2
+    #	time: 2023-11-20 11:06:08.040935446
+    #Total loci in STR configure file:	20
+    
+    #Marker	AlleleID	Length(bp)	Allele(stitched_and_phased)	CallType	Sample
+    CSF1PO	a1:	40	ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT	vcfcall
+    CSF1PO	a2:	44	ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT	vcfcall
+    D10S1248	a1:	52	GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA	vcfcall
+    D10S1248	a2:	64	GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA	vcfcall
+    D12S391	a1:	76	AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGAT	vcfcall
+    D12S391	a2:	76	AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGAT	vcfcall
 
 The # section is the comments.
 
