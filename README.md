@@ -60,11 +60,11 @@ Download the genome sequence of human from the 1000 Genome Project to the folder
        ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa	
 or use the command: 
 
-       `wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa`
+`wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa`
 
 Then to index the genome sequence with samtools (tool link: https://www.htslib.org/)  
 
-       `samtools faidx GRCh38_full_analysis_set_plus_decoy_hla.fa`
+`samtools faidx GRCh38_full_analysis_set_plus_decoy_hla.fa`
        
        
 ### Step 2. get test data and targeted site files 
@@ -78,7 +78,8 @@ For Windows system:
 
 `java -jar StrPhaser.jar -r GRCh38_full_analysis_set_plus_decoy_hla.fa -s testData\CODISSTR_anchor.XW.config_v0.3.txt -v testData\CCDG_14151_B01_GRM_WGS_2020-08-05_AllChr.filtered.shapeit2-duohmm-phased.8000.HG00130.vcf.gz -t 2 >out.tsv`
 
-For Linux-like systems:
+For Linux-like systems:   
+
 `java -jar StrPhaser.jar -r GRCh38_full_analysis_set_plus_decoy_hla.fa -s testData/CODISSTR_anchor.XW.config_v0.3.txt -v testData/CCDG_14151_B01_GRM_WGS_2020-08-05_AllChr.filtered.shapeit2-duohmm-phased.8000.HG00130.vcf.gz -t 2 >out.tsv`
 
 
@@ -127,7 +128,7 @@ Another result called output .html will be also generated for a colorful display
 
 ![ColorAlleleImage](D8_colorAllele.PNG) Fig.1 Colorful alleles of locus D8 output 
 
-![ColorAlleleImage](D19_colorAllele.PNG) Fig.1 Colorful alleles of locus D19 output 
+![ColorAlleleImage](D19_colorAllele.PNG) Fig.2 Colorful alleles of locus D19 output 
 
 
 
