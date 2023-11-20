@@ -39,7 +39,7 @@ or if want to control the maxi allowed computing memory, add -Xmx option:e.g., t
 
 Options:  
       
-      -r,--referenceSeq <arg>      reference genome sequence file in fasta format, accompanied by an indexed .fai from samtools faidx: eg. hg38.fasta, hg38.fa.fai <br/>
+     -r,--referenceSeq <arg>      reference genome sequence file in fasta format, accompanied by an indexed .fai from samtools faidx: eg. hg38.fasta, hg38.fa.fai <br/>
      -s,--strRegion <arg>         STR regions in tabular plain text, 1-based coordinate, one locus per line.  
                                   eg.  Chrom ChromStartPos_Str ChromEndPos_Str Name
                                        chr1 1000 10100 mkName1
