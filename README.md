@@ -26,12 +26,12 @@ v1.0
 The tool is under the Lesser General Public License v2.1. Free to distribute and improve. Free for all academic and educational purposes. A license is needed to be obtained from us for any industrial and any other purposes. Please contact us.
 
 ## Usage:
-Open a terminal window and type the following command: the -Xmx4G is for the allowed maximum memory to use, and can be ignored or changed to any memory you needed, e.g., 2G: -Xmx2G
+Open a terminal window and type the following command: 
 
 `java -jar StrPhaser.jar [options]  >out.tsv`
 
 
-or if want to control the maxi allowed computing memory, add -Xmx option:e.g. -Xmx4G for allowing maxi 4 G memory to use for this APP.
+or if want to control the maxi allowed computing memory, add -Xmx option:e.g., the -Xmx4G is for the allowed maximum 4G memory to use,  or changed to any memory you needed, e.g., 2G: -Xmx2G
 
 `java -jar -Xmx4G StrPhaser.jar [options]  >out.tsv`
 
@@ -54,7 +54,7 @@ Firstly go to the software directory in the command window:
 ` cd VarSeqStitcher`
        
 ### Step 1. prepare a genome reference file which should be the one used for vcf generation previously 
-Download the genome sequence of human from the 1000 Genome Project to the folder "VarSeqStitcher" 
+Download the genome sequence of human from the 1000 Genome Project to the folder "StrPhaser" 
        ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa	
 or use the command: 
 
@@ -66,13 +66,13 @@ Then to index the genome sequence with samtools (tool link: https://www.htslib.o
        
        
 ### Step 2. get test data and targeted site files 
-Download the subdirectory `testData` and put it inside the folder "VarSeqStitcher"
+Download the subdirectory `testData` and put it inside the folder "StrPhaser"
 
 
 ### Step 3. run the analysis with the following command
 We use the vcf files for human sample HG00130 as the test data. The original files are downloaded from the 1KG project at https://www.internationalgenome.org/data-portal/data-collection/30x-grch38. VCF for all chromosomes are merged and sorted, indexed with bcftools.
        
-`java -jar VarSeqStitcher.jar -d testData\MHindels_v0.3.bed -n testData\MHsnps.pos_v0.3.txt -r GRCh38_full_analysis_set_plus_decoy_hla.fa -s testData\CODISSTR_anchor.XW.config_v0.3.txt -v testData\CCDG_14151_B01_GRM_WGS_2020-08-05_AllChr.filtered.shapeit2-duohmm-phased.8000.HG00130.vcf.gz -t 2 >out.tsv`
+`java -jar StrPhaser.jar -r GRCh38_full_analysis_set_plus_decoy_hla.fa -s testData\CODISSTR_anchor.XW.config_v0.3.txt -v testData\CCDG_14151_B01_GRM_WGS_2020-08-05_AllChr.filtered.shapeit2-duohmm-phased.8000.HG00130.vcf.gz -t 2 >out.tsv`
 
 
 Here the output will be saved to "out.tsv", which is a tab seperated plain text. You can give any file name as like. If no output file name is given, the output will be directed into standout/screen of the terminal window.
