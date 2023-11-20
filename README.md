@@ -2,15 +2,13 @@
 A novel bioinformatics software to build STR alleles and phase them using VCF and reference sequence.
 * __Building long STR alleles from VCF__
 
-* __achieve same effects as from long sequencing reads__
+* __Achieve same effects as from long sequencing reads__
 
-*  __call all variants inside a STR alleles at the same time__
+*  __Call all variants inside a STR allele at the same time__
 
-* __run faster with parallel computing__
+* __Run faster with parallel computing__
   
-* __also works for short reads__
-
-* __Designed by Ph.D Xuewen Wang for those love genomics and science__
+* __Programmed by Ph.D Xuewen Wang for those love genomics and science__
 
 
 ## Computing enviroments 
