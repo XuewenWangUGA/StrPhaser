@@ -121,9 +121,9 @@ The "Sample" may have the information of the sample name inherited from vcf.
 
 the file can be opened in Microsoft Excel or other spreadsheet for easy read. For all 20 CODIS sites, please download the out.tsv in the directory "testData_output" in this Github site.
 
-### results 2. colorful alleles .html
+### results 2. display colorful alleles .html
 
-Another result called output .html will be also generated for a colorful display of the alleles if supported by your system. It should be supported in most system but not all like outdated Centos with command support only. This file will be opened in an internet web browser by default if available.
+Another result called output .html will be also generated for a colorful display of the alleles if supported by your system. It should be supported in most computing systems but not all, like outdated CentOS with the command support only. This file will be opened in an internet web browser by default if available.
 
 ![ColorAlleleImage](D8_colorAllele.PNG) Fig.1 Colorful alleles of locus D8 output 
 
