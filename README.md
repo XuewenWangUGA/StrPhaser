@@ -59,7 +59,9 @@ Options:
     -t,--ThreadNumber <arg>      integer, the number of computing threads, default [1]
     -v,--vcf <arg>               vcf file in .gz and with index gz.tbi from bcftools index --tbi
 
+## Speed
 
+The running speed of this tool is very fast. For CODIS core 20 STR sites, it will take less than 1 second with two computing threads for a vcf from 30x 1000 Genome project.
        
 ## Examplar analysis step by step
 Here is an example of how to use this tool for a human for 8-kb regions of 20 CODIS core STR sites.  For your specific genome, you just need to replace the genome and targeted sites in configure files with yours.
