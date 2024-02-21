@@ -59,7 +59,7 @@ Options:
     -t,--ThreadNumber <arg>      integer, the number of computing threads, default [1]
     -v,--vcf <arg>               vcf file in .gz and with index gz.tbi from bcftools index --tbi
 
-## Speed
+## Fast speed
 
 The running speed of this tool is very fast. For CODIS core 20 STR sites, it will take less than 1 second with two computing threads for a vcf from 30x 1000 Genome project.
 
