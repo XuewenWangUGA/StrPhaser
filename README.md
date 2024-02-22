@@ -37,7 +37,9 @@ The sfotware will use the Java runtime environment (SE) V17. If your computer ha
 v1.1
 
 ## Version history
+
 v1.1: add a option -b for optimized STR construction with user given values, default 3.
+
 v1.0 1st official release
 
 ## License
