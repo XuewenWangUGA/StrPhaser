@@ -74,7 +74,7 @@ The running speed of this tool is very fast. For CODIS core 20 STR sites, it wil
 ![SpeedImage](speed_time.PNG) Fig.0 Time to analysis CODIS core STRs from one human's VCF from 1000 Genome Project
 
 ## Accuracy
-the constructed STR alleles have an accuracy up to 100%. Users can adjust the offset value to optimize the accuracy. In addition, the accuracy is effected by the VCF data. If VCF is correctly genotyped, the STR alleles will be accuracte.
+The constructed STR alleles have an accuracy up to 100%. Users can adjust the offset value to optimize the accuracy. In addition, the accuracy is effected by the VCF data. If VCF is correctly genotyped, the STR alleles will be accuracte.
        
 ## Examplar analysis step by step
 Here is an example of how to use this tool for a human for 8-kb regions of 20 CODIS core STR sites.  For your specific genome, you just need to replace the genome and targeted sites in configure files with yours.
