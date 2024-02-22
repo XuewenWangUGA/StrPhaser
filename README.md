@@ -123,12 +123,15 @@ The output will look like:
     #Total loci in STR configure file:	20
     
     #Marker	AlleleID	Length(bp)	Allele(stitched_and_phased)	CallType	Sample
+    D1S1656 a0:     CCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA    RefCall
+    TPOX a0:        AATGAATGAATGAATGAATGAATGAATGAATG        RefCall
     CSF1PO	a1:	40	ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT	vcfcall
     CSF1PO	a2:	44	ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT	vcfcall
     D10S1248	a1:	52	GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA	vcfcall
     D10S1248	a2:	64	GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA	vcfcall
     D12S391	a1:	76	AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGAT	vcfcall
     D12S391	a2:	76	AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGAT	vcfcall
+    
 
 The # section is the comments.
 
@@ -142,7 +145,7 @@ The "Length(bp)" column is the bp of bases.
 
 The "Allele(stitched_and_phased)" is the allelic sequences of a STR.
 
-The "CallType" has the information suggesting from reference seq (refcall) or vcf (vcfcall).
+The "CallType" has the information suggesting from reference seq (RefCall) or vcf (vcfcall).
 
 The "Sample" may have the information of the sample name inherited from vcf.
 
