@@ -34,7 +34,11 @@ remove the version number: change the file name of StrPhaserv###.jar , e.g., Str
 The sfotware will use the Java runtime environment (SE) V17. If your computer has an old version of Java runtime, please install the newest Java or Java SE Development Kit 17 or higher from https://www.oracle.com/java/technologies/downloads/. Either Java or Java SE should work.
 
 ## The latest version 
-v1.0
+v1.1
+
+## Version history
+v1.1: add a option -b for optimized STR construction with user given values, default 3.
+v1.0 1st official release
 
 ## License
 The tool is under the Lesser General Public License v2.1. Free to distribute and improve. Free for all academic and educational purposes. A license is needed to be obtained from us for any industrial and any other purposes. Please contact us.
@@ -45,12 +49,14 @@ Open a terminal window and type the following command:
 `java -jar StrPhaser.jar [options]  >out.tsv`
 
 
+where "v##" is the version number.
+
 or if want to control the maxi allowed computing memory, add -Xmx option:e.g., the -Xmx4G is for the allowed maximum 4G memory to use,  or changed to any memory you needed, e.g., 2G: -Xmx2G
 
 `java -jar -Xmx4G StrPhaser.jar [options]  >out.tsv`
 
 Options:  
-      
+     -b,--base <arg>           integer, the number of offset bases, default [3]
      -r,--referenceSeq <arg>      reference genome sequence file in fasta format, accompanied by an indexed .fai from samtools faidx: eg. hg38.fasta, hg38.fa.fai <br/>
      -s,--strRegion <arg>         STR regions in tabular plain text, 1-based coordinate, one locus per line.  
                                   eg.  Chrom ChromStartPos_Str ChromEndPos_Str Name
