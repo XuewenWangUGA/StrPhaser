@@ -38,9 +38,9 @@ v1.1
 
 ## Version history
 
-v1.1: add a option -b for optimized STR construction with user given values, default 3.
+v1.1: add an option -b for the optimized STR construction with user given values, default 3.
 
-v1.0 1st official release
+v1.0: 1st official release
 
 ## License
 The tool is under the Lesser General Public License v2.1. Free to distribute and improve. Free for all academic and educational purposes. A license is needed to be obtained from us for any industrial and any other purposes. Please contact us.
@@ -72,6 +72,9 @@ Options:
 The running speed of this tool is very fast. For CODIS core 20 STR sites, it will take less than 1 second with two computing threads for a vcf from 30x 1000 Genome project.
 
 ![SpeedImage](speed_time.PNG) Fig.0 Time to analysis CODIS core STRs from one human's VCF from 1000 Genome Project
+
+## Accuracy
+the constructed STR alleles have an accuracy up to 100%. Users can adjust the offset value to optimize the accuracy. In addition, the accuracy is effected by the VCF data. If VCF is correctly genotyped, the STR alleles will be accuracte.
        
 ## Examplar analysis step by step
 Here is an example of how to use this tool for a human for 8-kb regions of 20 CODIS core STR sites.  For your specific genome, you just need to replace the genome and targeted sites in configure files with yours.
