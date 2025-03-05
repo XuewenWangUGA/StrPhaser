@@ -191,8 +191,8 @@ Another result called output .html will be also generated for a colorful display
 
 
 ## Citation
-
-Coming soon
+Xuewen Wang, Jonathan King, Huang Meng, Michael D. Coble,  August E. Woerner. 2025, StrPhaser constructs tandem repeat alleles from VCF data.
+doi: https://doi.org/10.1101/2025.01.22.634325
 
 ## Funding
 This work was sponsored in part by award 15PNIJ-21-GG-04159-RESS, awarded by the National Institute of Justice, Office of Justice Programs, U.S. Department of Justice.
